@@ -1,0 +1,10 @@
+modifyLineBreaks:
+  textWrapOptions:
+    columns: 80
+    removeBlockLineBreaks: 0
+    blocksFollow:
+      other: '\\start[a-zA-Z]+(?>\[.*\])?'
+    blocksBeginWith:
+      other: '\\(?!start|stop)[a-zA-Z]+|\\\(|\{|-|\.|"'
+    blocksEndBefore:
+      other: '\\stop[a-zA-Z]*'

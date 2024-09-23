@@ -1,0 +1,64 @@
+\startenvironment idea_of_progress
+\environment stageplay
+
+\unprotect
+
+\startmode[sample]
+\setuplabeltext[end={End~Sample}]
+\stopmode
+
+\setupstage[
+	style=\emph,
+	alternative=text,
+	left=\dialoglayoutparameter{cue},
+]
+
+\definecharacter[condorcet][
+	traits={he/him, 50s},
+	description={philosopher and mathematician.},
+	informal={Nicolas},
+	formal={Nicolas~de~Condorcet},
+]
+
+\definecharacter[sophie][
+	traits={she/her, 30s},
+	description={philosopher and salon hostess.},
+]
+
+\definecharacter[robespierre][
+	traits={he/him, 30s},
+	description={the incorruptible lawyer and politician.},
+	formal={Maximilien~Robespierre},
+]
+
+\definecharacter[louis][
+	traits={he/him, 30s},
+	description={citizen of France.},
+	royal={Louis~XVI},
+	formal={Louis~Capet},
+]
+
+\definecharacter[vernet][
+	name={Madame~Vernet},
+	traits={she/her, 40s},
+	description={an admirable woman.},
+]
+
+\definecharacter[eliza][
+	traits={she/her, 20s},
+	description={daughter of \condorcet and \sophie.},
+]
+
+\definecharacter[voltaire][
+	chorus=yes,
+	description={the voice of rebellion.},
+]
+
+\definecharacter[leibniz][
+	chorus=yes,
+	description={the voice of optimism.},
+]
+
+\protect
+
+\stopenvironment
