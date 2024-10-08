@@ -7,11 +7,22 @@
 \setuplabeltext[end={End~Sample}]
 \stopmode
 
+\startMPdefinitions
+ahlength := 8bp;
+\stopMPdefinitions
+
 \setupstage[
-	style=\emph,
+	style=\it,
 	alternative=text,
 	left=\dialoglayoutparameter{cue},
 ]
+
+\definefloat[drawing][drawings][graphic]
+\setupfloat[drawing][leftmargin=-\leftedgewidth]
+\setupcaption[drawing][location=none]
+
+\def\startdrawing{\blank[line]\startplacedrawing}
+\let\stopdrawing\stopplacedrawing
 
 \definecharacter[condorcet][
 	traits={he/him, 50s},
@@ -34,7 +45,7 @@
 \definecharacter[louis][
 	traits={he/him, 30s},
 	description={citizen of France.},
-	royal={Louis~XVI},
+	royal={King~Louis~XVI},
 	formal={Louis~Capet},
 ]
 
