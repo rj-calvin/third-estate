@@ -7,10 +7,6 @@
 \setuplabeltext[end={End~Sample}]
 \stopmode
 
-\startMPdefinitions
-ahlength := 8bp;
-\stopMPdefinitions
-
 \setupstage[
 	style=\it,
 	alternative=text,
@@ -27,25 +23,50 @@ ahlength := 8bp;
 \definecharacter[condorcet][
 	traits={he/him, 50s},
 	description={philosopher and revolutionary.},
-	full={Nicolas~de~Condorcet},
+	formal={Marquis~de~Condorcet},
 ]
 
 \definecharacter[sophie][
 	traits={she/her, 30s},
 	description={philosopher and salon hostess.},
+	formal={Madame~de~Condorcet},
 ]
 
-\definecharacter[robespierre][
+\definecharacter[paine][
+	traits={he/him, 50s},
+	description={the honorary French citizen.},
+	formal={Thomas~Paine},
+	informal={Thomas},
+	personal={Tom},
+]
+
+\definecharacter[brissot][
 	traits={he/him, 30s},
-	description={the incorruptible lawyer and politician.},
-	full={Maximilien~Robespierre},
+	description={the great activist.},
+	formal={Jacques~Pierre~Brissot},
+	informal={Jacques},
 ]
 
 \definecharacter[louis][
 	traits={he/him, 30s},
 	description={citizen of France.},
-	royal={King~Louis~XVI},
-	full={Louis~Capet},
+	royal={Louis~XVI},
+	formal={Louis~Capet},
+]
+
+\definecharacter[marat][
+	traits={he/him, 40s},
+	description={leader of fools.},
+	formal={Jean-Paul~Marat},
+	informal={Jean-Paul},
+]
+
+\definecharacter[robespierre][
+	traits={he/him, 30s},
+	description={the incorruptible politician.},
+	formal={Maximilien~Robespierre},
+	informal={Maximilien},
+	personal={Maxime},
 ]
 
 \definecharacter[vernet][
@@ -57,6 +78,13 @@ ahlength := 8bp;
 \definecharacter[eliza][
 	traits={she/her, 20s},
 	description={daughter of \condorcet and \sophie.},
+]
+
+\definecharacter[crowd][
+	description={various groups, assemblies, spectators, etc.},
+	jacobins={Jacobins},
+	sansculottes={sans-culottes},
+	spectators={spectators},
 ]
 
 \definecharacter[leibniz][
