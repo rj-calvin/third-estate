@@ -13,12 +13,25 @@
 	left=\dialoglayoutparameter{cue},
 ]
 
-\definefloat[drawing][drawings][graphic]
-\setupfloat[drawing][leftmargin=-\leftedgewidth]
-\setupcaption[drawing][location=none]
+\defineframedtext[frameddrawing][
+	frame=off,
+	align=middle,
+	width=broad,
+	location=none,
+	depthcorrection=off,
+	offset=\zeropoint,
+	toffset=\strutdepth,
+]
 
-\def\startdrawing{\blank[line]\startplacedrawing}
-\let\stopdrawing\stopplacedrawing
+\def\startdrawing{%
+	\blank[line]%
+	\startframeddrawing
+	\dontleavehmode
+	\hskip-\leftedgewidth
+	\ignorespaces
+}
+
+\let\stopdrawing\stopframeddrawing
 
 \definecharacter[condorcet][
 	traits={he/him, 50s},
