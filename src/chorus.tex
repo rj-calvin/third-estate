@@ -13,11 +13,237 @@ Republic, republic! What even is a republic?
 \stage Enter \leibniz.
 
 \startleibniz
-Ah! The answer is simple, \voltaire! A republic is a category of monad!
+Ah! The answer is simple! A republic is a category of monad!
 \stop
 
 \startvoltaire
 Oh, \leibniz, whatever shall we do with you?
+\stop
+
+\startleibniz
+Do you suppose France is ready for it?
+\stop
+
+\startvoltaire
+Oh, dear god, keep it in your pants, professor.
+
+Nobody wants to see your monads!
+\stop
+
+\startleibniz
+Ehem, a republic, \voltaire. Do you think France is ready for a republic?
+\stop
+
+\startvoltaire
+First, we'll have to see what France does with their king.
+\stop
+
+\startleibniz
+For when they abolish the monarchy? I suppose this is true.
+\stop
+
+\direction The \stranger whispers to \condorcet.
+
+\stage \condorcet begins to think.
+
+\startcondorcet
+But what should be done about the royalists? How do we refute their prejudices?
+\stop
+
+\startvoltaire
+Ah, of course. The age old question: without a divine monarch, how do we
+prevent the rise of tyranny?
+
+\(beat)
+That's a tough one. A real stinker.
+\stop
+
+\startleibniz
+Ah, well! The trouble with republics is that they heavily depend on having a
+proper decision function.
+
+Particularly, a decision function that does not incentivize strategy.
+
+\(beat)
+You see, a decision function is a method of aggregating the preferences of an
+assembly into a single preference representing the whole.
+
+Allow me to illustrate!
+\stop
+
+\stage \leibniz wheels in a blackboard.
+
+\startdrawing
+
+\startformula
+\hskip-\leftedgewidth
+\startmathalignment[n=3]
+\NC \text{First Estate} \NC :\; \NC A > B > C \NR
+\NC \text{Second Estate} \NC :\; \NC B > C > A \NR
+\NC \text{Third Estate} \NC :\; \NC C > B > A \NR
+\stopmathalignment
+\stopformula
+
+\stopdrawing
+
+\startleibniz
+Suppose we have three estates that are tasked with deciding between three
+policies: A, B, and C.
+
+Policy A represents the status quo and is the preferred choice of the
+clericalism of the first estate.
+
+Policy B represents the moderate change that is preferred by the nobility of
+the second estate.
+
+Lastly, policy C represents a radical change and is preferred by the
+disadvantaged third estate.
+
+\(beat)
+An example of a decision function would be pairwise majority.
+
+Here, we see that two of three prefer policy B over policy A, two of three
+prefer C over A, and two of three prefer B over C.
+
+Thus, this decision function would aggregate these preferences into the result:
+\stop
+
+\stage \leibniz appends:
+
+\blank[line]
+
+\startdrawing
+\startMPcode
+path p; p := fullcircle xscaled 3cm yscaled 1cm;
+draw p;
+label(btex $B > C > A$ etex, center p);
+\stopMPcode
+\stopdrawing
+
+\startcondorcet
+Ah, I see that it's identical to the second estate's judgement.
+\stop
+
+\startleibniz
+Yes, you observe the flaw with pairwise majority decisions.
+
+You see, why would the third estate submit their preferences honestly when they
+know that this will end up favoring the second estate?
+
+Instead, the third estate can strategically change their preference as so:
+\stop
+
+\stage \leibniz edits:
+
+\startdrawing
+
+\startformula
+\hskip-\leftedgewidth
+\startmathalignment[n=3]
+\NC \text{Third Estate} \NC :\; \NC C > A > B \NR
+\stopmathalignment
+\stopformula
+
+\leavevmode
+\hskip-\leftedgewidth
+\startMPcode
+path p; p := fullcircle xscaled 3cm yscaled 1cm;
+draw p;
+label(btex ? etex, center p);
+\stopMPcode
+\stopdrawing
+
+\startleibniz[continued]
+Now, two of three prefer A to B, two of three prefer B to C, and two of three
+prefer C to A.
+\stop
+
+\startcondorcet
+It forms a cycle!
+\stop
+
+\startleibniz
+Correct. By acting strategically, the third estate can sabotage majority
+decisions.
+\stop
+
+\startcondorcet
+And so what decision function would be strategy-proof?
+\stop
+
+\startsplit
+
+\startleibniz
+I don't know yet!
+\stop
+
+\split
+
+\startvoltaire
+Oh, I can think of one!
+\stop
+
+\stopsplit
+
+\startcondorcet
+You know of one, \voltaire?
+\stop
+
+\startvoltaire
+Indeed.
+
+\(beat)
+Suppose our decision function simply selects the first estate every time.
+
+Then the process is strategy-proof since nobody needs to strategize.
+
+The first estate does not since it knows that it's preferences are always going
+to succeed.
+
+And the second and third estates do not since nothing they can do matters!
+\stop
+
+\startleibniz
+Admittedly, this is correct.
+
+But that would be a trivial decision function.
+
+We are only interested in non-trivial ones.
+\stop
+
+\startvoltaire
+It seems pretty damn non-trivial to me.
+\stop
+
+\startcondorcet
+Have faith! Such a non-trivial decision function is necessary for the
+advancement of progress!
+\stop
+
+\startleibniz
+One step forward, to a destination infinitely far away!
+\stop
+
+\stage Enter \sophie, knocking at the door.
+
+\direction \leibniz and \voltaire disappear.
+
+\startsophie
+My love. Please keep this in your head. You keep waking the baby.
+\stop
+
+\startcondorcet
+Oh! My apologies!
+\stop
+
+\stage Exit \sophie.
+
+\stage \condorcet returns to his desk and stares at his writing.
+
+\stage Pause.
+
+\startcondorcet
+Boy, that wasn't very helpful at all...
 \stop
 
 \stopcomponent
