@@ -48,6 +48,10 @@
 	personal={Soph},
 ]
 
+\definecharacter[eliza][
+	description={daughter of \condorcet and \sophie.},
+]
+
 \definecharacter[paine][
 	traits={he/him, 50s},
 	description={the honorary citizen.},
@@ -58,18 +62,9 @@
 
 \definecharacter[brissot][
 	traits={he/him, 30s},
-	description={the politician.},
+	description={the patriot.},
 	formal={Jacques~Pierre~Brissot},
 	informal={Jacques},
-]
-
-\definecharacter[robespierre][
-	traits={he/him, 30s},
-	description={the incorruptible.},
-	formal={Maximilien~Robespierre},
-	informal={Maximilien},
-	personal={Maxime},
-	incorruptible={Incorruptible},
 ]
 
 \definecharacter[marat][
@@ -84,6 +79,16 @@
 	description={the daring orator.},
 	formal={Georges~Danton},
 	informal={Georges},
+]
+
+\definecharacter[robespierre][
+	traits={he/him, 30s},
+	description={the incorruptible.},
+	formal={Maximilien~Robespierre},
+	informal={Maximilien},
+	personal={Maxime},
+	incorruptible={Incorruptible},
+	theincorruptible={the~\robespierre[incorruptible]},
 ]
 
 \definecharacter[charlotte][
@@ -107,10 +112,6 @@
 	name={Madame~Vernet},
 	traits={she/her, 40s},
 	description={an admirable woman.},
-]
-
-\definecharacter[eliza][
-	description={daughter of \condorcet and \sophie.},
 ]
 
 \definecharacter[voltaire][
