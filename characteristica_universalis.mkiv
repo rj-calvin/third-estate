@@ -32,7 +32,11 @@
 
 \let\stopdrawing\stopframeddrawing
 
+\definecastlist[cast]
+\definecastlist[chorus]
+
 \definecharacter[condorcet][
+	list=cast,
 	traits={he/him, 50s},
 	description={philosopher and revolutionary.},
 	marquis={Marquis~de~Condorcet},
@@ -42,6 +46,7 @@
 ]
 
 \definecharacter[sophie][
+	list=cast,
 	traits={she/her, 30s},
 	description={philosopher and salonni\`ere.},
 	formal={Madame~de~Condorcet},
@@ -49,10 +54,12 @@
 ]
 
 \definecharacter[eliza][
+	list=cast,
 	description={daughter of \condorcet and \sophie.},
 ]
 
 \definecharacter[paine][
+	list=cast,
 	traits={he/him, 50s},
 	description={the honorary citizen.},
 	formal={Thomas~Paine},
@@ -61,6 +68,7 @@
 ]
 
 \definecharacter[brissot][
+	list=cast,
 	traits={he/him, 30s},
 	description={the patriot.},
 	formal={Jacques~Pierre~Brissot},
@@ -68,6 +76,7 @@
 ]
 
 \definecharacter[marat][
+	list=cast,
 	traits={he/him, 40s},
 	description={the friend of the people.},
 	formal={Jean-Paul~Marat},
@@ -75,6 +84,7 @@
 ]
 
 \definecharacter[danton][
+	list=cast,
 	traits={he/him, 30s},
 	description={the daring orator.},
 	formal={Georges~Danton},
@@ -82,6 +92,7 @@
 ]
 
 \definecharacter[robespierre][
+	list=cast,
 	traits={he/him, 30s},
 	description={the incorruptible.},
 	formal={Maximilien~Robespierre},
@@ -92,21 +103,25 @@
 ]
 
 \definecharacter[lafayette][
+	list=cast,
 	traits={he/him, 30s},
 	description={chief of the National Guard.},
 ]
 
 \definecharacter[charlotte][
+	list=cast,
 	traits={she/her, 30s},
 	description={sister of \sophie.}
 ]
 
 \definecharacter[cabanis][
+	list=cast,
 	traits={he/him, 30s},
 	description={doctor and husband of \charlotte.},
 ]
 
 \definecharacter[louis][
+	list=cast,
 	traits={he/him, 30s},
 	description={a citizen of France.},
 	royal={Louis~XVI},
@@ -114,6 +129,7 @@
 ]
 
 \definecharacter[vernet][
+	list=cast,
 	name={Madame~Vernet},
 	traits={she/her, 40s},
 	description={an admirable woman.},
@@ -134,15 +150,15 @@
 	description={the voice of something else.},
 ]
 
-\definecharacter[thestranger][list=none, name={The~\stranger}]
+\definecharacter[thestranger][name={The~\stranger}]
 
 \definecharacter[barnave][
 	list=none,
 	description={conservative member of the Constituent Assembly.},
 ]
 
-\definecharacter[turgot][list=none]
-\definecharacter[dalembert][list=none, name={d'Alembert}]
+\definecharacter[turgot]
+\definecharacter[dalembert][name={d'Alembert}]
 
 \definecharacter[petion][
 	list=none,
@@ -155,25 +171,27 @@
 	description={mayor of Paris.},
 ]
 
-\definecharacter[president][list=none]
-\definecharacter[patriot][list=none, name={patriot}]
-\definecharacter[patriots][list=none, name={patriots}]
-\definecharacter[militia][list=none]
-\definecharacter[deputies][list=none, name={deputies}]
-\definecharacter[deputy][list=none, name={deputy}]
-\definecharacter[jacobin][list=none]
-\definecharacter[jacobins][list=none]
-\definecharacter[girondin][list=none]
-\definecharacter[girondins][list=none]
-\definecharacter[feuillant][list=none]
-\definecharacter[feuillants][list=none]
-\definecharacter[sansculottes][list=none, name={sans-culottes}]
-\definecharacter[sansculotte][list=none, name={sans-culotte}]
-\definecharacter[patrons][list=none, name={patrons}]
-\definecharacter[drunkard][list=none, name={drunkard}]
-\definecharacter[executioner][list=none, name={executioner}]
+\definecharacter[president]
+\definecharacter[patriot][name={patriot}]
+\definecharacter[patriots][name={patriots}]
+\definecharacter[militia]
+\definecharacter[deputies][name={deputies}]
+\definecharacter[deputy][name={deputy}]
+\definecharacter[jacobin]
+\definecharacter[jacobins]
+\definecharacter[woman]
+\definecharacter[girondin]
+\definecharacter[girondins]
+\definecharacter[feuillant]
+\definecharacter[feuillants]
+\definecharacter[sansculottes][name={sans-culottes}]
+\definecharacter[sansculotte][name={sans-culotte}]
+\definecharacter[patrons][name={patrons}]
+\definecharacter[drunkard][name={drunkard}]
+\definecharacter[executioner][name={executioner}]
 
 \definecharacter[crowd][
+	list=cast,
 	description={various groups, assemblies, spectators, etc.},
 ]
 
