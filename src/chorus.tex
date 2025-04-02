@@ -72,20 +72,16 @@ assembly into a single preference representing the whole.
 Allow me to illustrate!
 \stop
 
-\stage \leibniz wheels in a blackboard.
+\goodbreak
+\stage \leibniz wheels in a blackboard:
 
-\startdrawing
-
-\startformula
-\hskip-\leftedgewidth
+\startformula[modern]
 \startmathalignment[n=3]
 \NC \text{First Estate} \NC :\; \NC A > B > C \NR
 \NC \text{Second Estate} \NC :\; \NC B > C > A \NR
 \NC \text{Third Estate} \NC :\; \NC C > B > A \NR
 \stopmathalignment
 \stopformula
-
-\stopdrawing
 
 \startleibniz
 Suppose we have three estates that are tasked with deciding between three
@@ -122,15 +118,13 @@ Thus, this decision function would aggregate these preferences into the result:
 
 \stage \leibniz appends:
 
-\blank[line]
-
-\startdrawing
+\startformula[modern]
 \startMPcode
 path p; p := fullcircle xscaled 3cm yscaled 1cm;
 draw p;
 label(btex $B > C > A$ etex, center p);
 \stopMPcode
-\stopdrawing
+\stopformula
 
 \startcondorcet
 Yes. The reasoning is clear, but I see that the result is just a copy of the
@@ -170,23 +164,19 @@ as so:
 \goodbreak
 \stage \leibniz edits:
 
-\startdrawing
-
-\startformula
-\hskip-\leftedgewidth
+\startformula[modern]
 \startmathalignment[n=3]
 \NC \text{Third Estate} \NC :\; \NC C > A > B \NR
 \stopmathalignment
 \stopformula
 
-\leavevmode
-\hskip-\leftedgewidth
+\startformula[modern]
 \startMPcode
 path p; p := fullcircle xscaled 3cm yscaled 1cm;
 draw p;
 label(btex ? etex, center p);
 \stopMPcode
-\stopdrawing
+\stopformula
 
 \startleibniz[continued]
 Now, two of three prefer A to B, two of three prefer B to C, and two of three
@@ -217,7 +207,7 @@ I don't know of one, yet!
 \split
 
 \startvoltaire
-Oh, I can think of one!
+I can think of one!
 \stop
 
 \stopsplit
@@ -225,6 +215,8 @@ Oh, I can think of one!
 \startcondorcet
 You know of one, \voltaire?
 \stop
+
+\stage \voltaire smiles.
 
 \startvoltaire
 Oh, yes.
@@ -243,9 +235,8 @@ And the second and third estates do not since nothing they can do matters!
 \startleibniz
 Alas... this is correct.
 
-But that would be a \underbar{trivial} decision function.
-
-We are only interested in \underbar{non-trivial} decision functions.
+But that would be a trivial decision function. We are only interested in {\emph
+		non}-trivial decision functions.
 \stop
 
 \startvoltaire

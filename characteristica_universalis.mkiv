@@ -13,24 +13,8 @@
 	left=\dialoglayoutparameter{cue},
 ]
 
-\defineframedtext[frameddrawing][
-	frame=off,
-	align=middle,
-	width=broad,
-	location=none,
-	depthcorrection=off,
-	offset=\zeropoint,
-	toffset=\strutdepth,
-]
-
-\def\startdrawing{%
-	\startframeddrawing
-	\setupbodyfont[modern]%
-	\hskip-\leftedgewidth
-	\ignorespaces
-}
-
-\let\stopdrawing\stopframeddrawing
+\setupdialog[before={\let\emph\underbar}]
+\setupformulas[rightmargin=\leftedgewidth]
 
 \definecastlist[cast]
 \definecastlist[chorus]
@@ -75,35 +59,33 @@
 	description={the patriot.},
 	full={Jacques~Pierre~Brissot},
 	jacques={Jacques},
-	patriot={Patriot},
-	thepatriot={The~\brissot[patriot]},
+	thepatriot={The~Patriot},
 ]
 
 \definecharacter[marat][
 	list=cast,
 	traits={he/him, 40s},
 	description={the friend of the people.},
-	formal={Jean-Paul~Marat},
-	informal={Jean-Paul},
+	full={Jean-Paul~Marat},
+	jeanpaul={Jean-Paul},
 ]
 
 \definecharacter[danton][
 	list=cast,
 	traits={he/him, 30s},
 	description={the daring orator.},
-	formal={Georges~Danton},
-	informal={Georges},
+	full={Georges~Danton},
+	georges={Georges},
 ]
 
 \definecharacter[robespierre][
 	list=cast,
 	traits={he/him, 30s},
 	description={the incorruptible.},
-	formal={Maximilien~Robespierre},
-	informal={Maximilien},
-	personal={Maxime},
-	incorruptible={Incorruptible},
-	theincorruptible={the~\robespierre[incorruptible]},
+	full={Maximilien~Robespierre},
+	maximilien={Maximilien},
+	maxime={Maxime},
+	theincorruptible={The~Incorruptible},
 ]
 
 \definecharacter[lafayette][
@@ -115,19 +97,13 @@
 \definecharacter[charlotte][
 	list=cast,
 	traits={she/her, 30s},
-	description={sister of \sophie.}
+	description={sister of \sophie.},
 ]
 
 \definecharacter[cabanis][
 	list=cast,
 	traits={he/him, 30s},
 	description={doctor and husband of \charlotte.},
-]
-
-\definecharacter[olympe][
-	list=cast,
-	traits={she/her, 30s},
-	description={the bastard child of a king.},
 ]
 
 \definecharacter[louis][
@@ -141,7 +117,7 @@
 \definecharacter[vernet][
 	list=cast,
 	name={Madame~Vernet},
-	traits={she/her, 40s},
+	traits={she/her, 60s},
 	description={an admirable woman.},
 ]
 
@@ -163,24 +139,12 @@
 
 \definecharacter[thestranger][name={The~\stranger}]
 
-\definecharacter[barnave][
-	list=none,
-	description={conservative member of the Constituent Assembly.},
-]
-
 \definecharacter[turgot]
 \definecharacter[dalembert][name={d'Alembert}]
-
-\definecharacter[petion][
-	list=none,
-	name={P\'etion},
-	description={member of the Jacobins.},
-]
-
-\definecharacter[bailly][
-	list=none,
-	description={mayor of Paris.},
-]
+\definecharacter[barnave][description={conservative member of the Constituent Assembly.}]
+\definecharacter[petion][name={P\'etion}, description={member of the Jacobins.}]
+\definecharacter[bailly][description={mayor of Paris.}]
+\definecharacter[olympe][traits={she/her, 40s}, description={the bastard child of a king.}]
 
 \definecharacter[president]
 \definecharacter[patriot][name={patriot}]
