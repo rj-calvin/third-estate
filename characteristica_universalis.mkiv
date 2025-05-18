@@ -92,8 +92,10 @@
 	theincorruptible={The~Incorruptible},
 ]
 
+\definecharacter[theincorruptible][name={The~Incorruptible}]
+
 \definecharacter[lafayette][
-	list=cast,
+	list=none,
 	traits={he/him, 30s},
 	description={chief of the National Guard.},
 ]
@@ -116,15 +118,22 @@
 	description={the eagle of the Gironde.},
 ]
 
-\definecharacter[guadet]
+\definecharacter[gensonne][
+	list=cast,
+	traits={he/him, 30s},
+	name={Gensonn\'e},
+	description={president of the Legislature.},
+]
 
+\definecharacter[guadet]
 \definecharacter[isnard]
 
-\definecharacter[petion][
-	list=none,
-	name={P\'etion},
+\definecharacter[barere][
+	list=cast,
+	name={Bar\`ere},
 	traits={he/him, 30s},
-	description={the second mayor of Paris.},
+	description={president of the Convention.},
+	citizen={Citoyen~Pr\'esident},
 ]
 
 \definecharacter[louis][
@@ -166,10 +175,14 @@
 \definecharacter[bailly][description={mayor of Paris.}]
 \definecharacter[olympe][traits={she/her, 40s}, description={the bastard child of a king.}]
 \definecharacter[camus][description={the national archivist.}]
-\definecharacter[gensonne][name={Gensonn\'e}]
 \definecharacter[buzot]
 \definecharacter[clavier][name={Clavi\`er}]
 \definecharacter[roland]
+\definecharacter[equality][name={Monsieur~\'Egalit\'e}]
+\definecharacter[petion][name={P\'etion}]
+\definecharacter[thuriot]
+\definecharacter[duhem]
+\definecharacter[lajuinais]
 
 \definecharacter[president][name={Pr\'esident}, mr={Monsieur~Pr\'esident}]
 \definecharacter[patriot][name={patriot}]
@@ -177,10 +190,13 @@
 \definecharacter[royalist][name={royalist}]
 \definecharacter[royalists][name={royalists}]
 \definecharacter[militia]
+\definecharacter[guard]
+\definecharacter[guards]
 \definecharacter[deputies][name={deputies}]
 \definecharacter[deputy][name={deputy}]
 \definecharacter[leftminority][name={Left~Minority}]
 \definecharacter[rightminority][name={Right~Minority}]
+\definecharacter[rightmajority][name={Right~Majority}]
 \definecharacter[jacobin]
 \definecharacter[jacobins]
 \definecharacter[woman][name={woman}]
@@ -197,8 +213,13 @@
 \definecharacter[drunkard][name={drunkard}]
 \definecharacter[paris][name={Paris}]
 \definecharacter[executioner][name={executioner}]
-\definecharacter[theincorruptible][name={The~Incorruptible}]
-\definecharacter[themountain][name={The~Montagnards}]
+\definecharacter[citizen]
+\definecharacter[citizens]
+\definecharacter[assembly]
+\definecharacter[convention][national={National~\convention}]
+\definecharacter[representative]
+\definecharacter[representatives]
+\definecharacter[themountain][name={The~Mountain}]
 
 \definecharacter[crowd][
 	list=cast,
