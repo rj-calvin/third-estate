@@ -1,2 +1,1128 @@
 \startcomponent et_toi_robespierre
+
+\scene
+
+\open Lights down on all but \condorcet.
+
+\stage Enter \voltaire.
+
+\startvoltaire
+Professor. Do you mind if I consult you?
+\stop
+
+\stage Enter \leibniz.
+
+\stage Pause.
+
+\startvoltaire
+I believe that I have discovered a proof, and I would like you to check my
+work.
+\stop
+
+\startleibniz
+Very well.
+\stop
+
+\goodbreak
+\stage \voltaire smiles and wheels in a blackboard:
+
+\startstaticMPfigure{circleA}
+draw fullcircle scaled 18pt;
+label(textext("A"), origin);
+\stopstaticMPfigure
+
+\startstaticMPfigure{circleC}
+draw fullcircle scaled 18pt;
+label(textext("C"), origin);
+\stopstaticMPfigure
+
+\startstaticMPfigure{circleAorC}
+draw fullcircle yscaled 22pt xscaled 44pt;
+label(textext("A | C"), origin);
+\stopstaticMPfigure
+
+\setupTABLE[
+	frame=off,
+	split=no,
+	width=.111\textwidth,
+	toffset=4pt,
+	loffset=5mm,
+]
+
+\setupTABLE[row][first][
+	bottomframe=on,
+	toffset=0mm,
+	boffset=4pt,
+	loffset=4mm,
+]
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD $R_2$ \eTD
+\bTD $R_3$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleA]}
+\eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD A \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD B \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD C \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\startvoltaire
+Suppose we have - oh, I don't know, seven-hundred forty-five representatives
+who each rank their preferences for three choices: A, B, and C.
+
+We can assume that any arbitrary decision function would select choice A if
+every participant ranks A highest in their preferences, correct?
+\stop
+
+\startleibniz
+Ah, yes, support for unanimity is essential for all decision functions.
+\stop
+
+\startvoltaire
+And if our decision function is strategy-proof, then there should be no reason
+why a representative should be punished for reporting their true preferences.
+\stop
+
+\startleibniz
+That is correct.
+\stop
+
+\startvoltaire
+So then, say, if representative one were to change their preference for C, it
+should therefore not be to their detriment to increase their ranking of C
+over B.
+\stop
+
+\stage \voltaire edits:
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD $R_2$ \eTD
+\bTD $R_3$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleA]}
+\eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD A \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD B \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD C \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\startvoltaire
+In short, the outcome should remain A since if this edit changed the outcome,
+then representative one would not be incentivized to report their true
+preference.
+\stop
+
+\startleibniz
+Yes, correct.
+\stop
+
+\startbarere
+Gentlemen... We shall now begin the nominal call on the sentence of \louis.
+\stop
+
+\startlehardi
+I motion that the sentence of death should not be passed with any less than a
+two-thirds majority!
+\stop
+
+\startlajuinais
+I declare that it should be made three-fourths!
+\stop
+
+\stage An uproar.
+
+\startbarere
+GENTLEMEN! ORDER! The motion shall proceed without modification.
+\stop
+
+\startvoltaire
+The case for a strategy-proof decision function would, however, be different
+should representative one modify their preference for A relative to either B or
+C, correct?
+\stop
+
+\startleibniz
+Yes. Since we are assuming an arbitrary decision function, we can't assume that
+lowering the rank of A for any representative will preserve the outcome we
+obtained by unanimity.
+\stop
+
+\startvoltaire
+But we do know that representative one cannot be punished for reporting an
+increased preference for C.
+
+We don't know whether it will be certain to modify the outcome, but we do know
+that if it did, the outcome must swap from A to C.
+\stop
+
+\stage \voltaire edits:
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD $R_2$ \eTD
+\bTD $R_3$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleAorC]}
+\eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD A \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD B \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD C \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\direction Each deputy is called to the tribune.
+
+\startbarere
+\mailhe!
+\stop
+
+\startmailhe
+I do vote for death. However, I motion that should there be a majority, then
+the \convention should decide whether or not his execution should be delayed
+until the acceptance of the new constitution.
+\stop
+
+\stage Loud groans.
+
+\startleibniz
+The outcome is now ambiguous, but it is true that we know that no
+strategy-proof decision function would select B in this case.
+
+Otherwise, representative one would not have increased their preference for C.
+\stop
+
+\startvoltaire
+It would be like Marie Antoinette swapping her preference to chocolate cake
+when presented an irrelevant alternative.
+\stop
+
+\startleibniz
+As an analogy, but not as a formal argument.
+\stop
+
+\startvoltaire
+Ah, there is time yet for formal arguments.
+
+I now wish to argue this: that we may now repeat this procedure for
+representatives two, three, and so on.
+\stop
+
+\startbarere
+\thuriot!
+\stop
+
+\startthuriot
+I vote death. {\emph Immediate} death.
+\stop
+
+\startleibniz
+How would you perform this algorithm?
+\stop
+
+\startvoltaire
+Simple. We proceed conditionally on whether the outcome is changed by the
+increase in C over A.
+
+If the outcome remains the same, then we continue to perform the same
+operations, following the same reasoning already demonstrated, on
+representative two.
+
+Then, if the procedure again fails to change the outcome, we continue to
+representative three, and then so on.
+
+If, at any point, the outcome is changed to C, we shall halt on the
+representative responsible for it.
+\stop
+
+\startleibniz
+Ah! I see your reasoning. This algorithm is sure to terminate by unanimity.
+
+For in the worst case, you would modify the preference of representative
+seven-hundred forty-five, and by then the choice of C will be placed at the top
+of every ranking.
+
+By unanimity, the outcome must be C in such a case.
+\stop
+
+\startvoltaire
+That's my thinking.
+
+Therefore, there must exist a representative where performing this procedure
+does indeed change the outcome from A to C, and at this point we halt the
+algorithm.
+\stop
+
+\startbarere
+\vergniaud!
+\stop
+
+\startvergniaud
+I have fought for an appeal to the people.
+
+Yet, the \convention has decided otherwise.
+
+I have failed to uphold my principles, and so I have nothing more to say.
+
+\beat
+
+I decided that \louis was guilty, thus I open the penal code to see that the
+penalty is death.
+
+I, therefore, pronounce death upon him, but do so with the restriction proposed
+by \mailhe.
+\stop
+
+\startvoltaire
+Given now that we know the existence of a representative where, upon lifting
+their rank for C, would change the outcome to C, we shall call this
+representative the pivotal voter.
+
+I will label the index of the pivotal voter's location with the letter N.
+\stop
+
+\stage \voltaire flips the board, revealing two states:
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{n-1}$ \eTD
+\bTD $R_{n}$ \eTD
+\bTD $R_{n+1}$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleA]}
+\eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\bTD A \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\bTD C \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\bTD B \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\blank[2*line]
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{n-1}$ \eTD
+\bTD $R_{n}$ \eTD
+\bTD $R_{n+1}$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleC]}
+\eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\bTD C \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\bTD A \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\bTD B \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\startbarere
+\marat!
+\stop
+
+\startmarat
+Death.
+\stop
+
+\startvoltaire
+Here we see the moment before and after the pivotal voter lifts their
+preference for C above A.
+
+\beat
+
+Now, I'd like to apply a new algorithm to this second table - the one taking
+place after C has been lifted.
+
+Notice that the representatives to the right of the pivotal voter already list
+C at the bottom of their preferences.
+
+Therefore, changing their preference for B and lifting it above A should not
+change the outcome.
+\stop
+
+\goodbreak
+\stage \voltaire edits:
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{n-1}$ \eTD
+\bTD $R_{n}$ \eTD
+\bTD $R_{n+1}$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleC]}
+\eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\bTD C \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\bTD A \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\bTD B \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\startbarere
+\paine!
+\stop
+
+\startpaine
+I --
+\stop
+
+\startmarat
+-- He is a Quaker! He should be forbidden from voting since he is biased by his
+religion!
+\stop
+
+\stage Groans from the \convention.
+
+\startpaine
+Exile.
+\stop
+
+\startvoltaire
+Likewise, we can do a similar operation to the representatives to the left of
+the pivotal voter.
+
+Namely, we can increase their preferences for B and lift it above A since C is
+already at the top of their preferences.
+\stop
+
+\goodbreak
+\stage \voltaire edits:
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{n-1}$ \eTD
+\bTD $R_{n}$ \eTD
+\bTD $R_{n+1}$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleC]}
+\eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\bTD C \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\bTD A \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\bTD B \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\startbarere
+\robespierre!
+\stop
+
+\startrobespierre
+I vote death for the tyrant.
+\stop
+
+\startvoltaire
+So, here we reach a key moment of my argument - it is essential in order to
+arrive at my eventual destination.
+
+I would like to argue that if the pivotal voter swaps their preferences of A
+and C in this second table, then the outcome will change to A.
+\stop
+
+\startleibniz
+Hold on, \voltaire! You can't make such a leap in logic. You have modified the
+rank of A in many positions, so there is no guarantee that this pivotal voter
+has the same influence they once did following your first algorithm.
+\stop
+
+\startvoltaire
+Indeed. But you must confess that we still know that such a change will either
+do nothing, or it will change the outcome to A.
+\stop
+
+\startleibniz
+Now, it would seem we are stuck as there is no longer any means to decide
+between the two possibilities.
+\stop
+
+\startvoltaire
+Not so.
+\stop
+
+\goodbreak
+\stage \voltaire edits:
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{n-1}$ \eTD
+\bTD $R_{n}$ \eTD
+\bTD $R_{n+1}$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleAorC]}
+\eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\bTD A \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\bTD C \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\bTD B \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\startbarere
+\danton!
+\stop
+
+\startdanton
+Death...
+\stop
+
+\startvoltaire
+Let's consider the case where the outcome remains C.
+
+Then observe that, if this were the case, we would then be allowed to lift
+every A to the left and right of the pivotal voter.
+
+If we did this, we would be able to construct the exact table as above, where -
+you would recall - we deduced the outcome to be A.
+\stop
+
+\startleibniz
+AH! I see!
+
+The first table was the moment before your algorithm swapped the outcome from A
+to C.
+
+Thus, since your case of C allows you to construct a contradiction, this case
+is therefore impossible: the outcome must be A!
+
+Very clever!
+\stop
+
+\startvoltaire
+Why thank you.
+\stop
+
+\goodbreak
+\stage \voltaire edits:
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{n-1}$ \eTD
+\bTD $R_{n}$ \eTD
+\bTD $R_{n+1}$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleA]}
+\eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\bTD A \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\bTD C \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\bTD B \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\startbarere
+\legendre!
+\stop
+
+\startlegendre
+DEATH TO THE OPPRESSOR! Let his corpse be divided into eighty-four pieces and
+distributed to each department so that they may burn the meat under the trees
+of liberty!
+\stop
+
+\startvoltaire
+Now, we can lift all of the Bs to the left of and including the pivotal voter.
+\stop
+
+\goodbreak
+\stage \voltaire edits:
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{n-1}$ \eTD
+\bTD $R_{n}$ \eTD
+\bTD $R_{n+1}$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleA]}
+\eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\bTD A \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\bTD B \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\bTD C \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\startleibniz
+Wait...
+\stop
+
+\startvoltaire
+Hm? What is it?
+\stop
+
+\startleibniz
+I... I... My apologies. Please continue.
+\stop
+
+\startvoltaire
+With pleasure.
+\stop
+
+\startbarere
+\serres!
+\stop
+
+\startserres
+\beat{sobbing}
+
+What cruelty have I seen! How evil is this fate for France! How ashamed I am to
+be witness to the defilement of my country!
+\stop
+
+\startdanton
+Get on with it! No more speeches, damn it!
+\stop
+
+\startserres
+I... I... I vote that the king may live! That he may be spared such barbarity!
+
+But that he still be properly punished for his misdeeds and misgivings.
+
+I vote that he be imprisoned until the conclusion of our war with Austria.
+\stop
+
+\stage Groans from the \convention.
+
+\startvoltaire
+Suppose now that I produce another modification to the rankings of A.
+
+This time I shall do so for the representatives to the right of the pivotal
+voter.
+
+Again, this shall require us to decide whether or not this change will also
+change the outcome.
+\stop
+
+\goodbreak
+\stage \voltaire edits:
+
+\startformula[modern]
+\bTABLE
+
+\bTR
+\bTD $R_1$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{n-1}$ \eTD
+\bTD $R_{n}$ \eTD
+\bTD $R_{n+1}$ \eTD
+\bTD[loffset=14pt] \bf\unknown \eTD
+\bTD $R_{745}$ \eTD
+\bTD[bottomframe=off] \rightarrow \eTD
+\bTD[bottomframe=off,loffset=0pt]
+\vbox{\vskip-2pt\usestaticMPfigure[circleAorC]}
+\eTD
+\eTR
+
+\bTR
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\bTD A \eTD
+\bTD B \eTD
+\bTD \bf\unknown \eTD
+\bTD B \eTD
+\eTR
+
+\bTR
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\bTD B \eTD
+\bTD C \eTD
+\bTD \bf\unknown \eTD
+\bTD C \eTD
+\eTR
+
+\bTR
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\bTD C \eTD
+\bTD A \eTD
+\bTD \bf\unknown \eTD
+\bTD A \eTD
+\eTR
+
+\eTABLE
+\stopformula
+
+\startleibniz
+Surely, at this stage the outcome must be B!
+\stop
+
+\startvoltaire
+B? You forget yourself, professor! Such an outcome would not allow the decision
+function to be strategy-proof.
+\stop
+
+\startleibniz
+Right, it must, therefore, be C! Or perhaps it is indeterminate!
+\stop
+
+\startvoltaire
+But is it so?
+\stop
+
+\startleibniz
+It must be. Recall that our decision to choose A as our initial value was
+arbitrary, therefore if the outcome were to remain A, then this would imply
+that the outcome is determined exclusively by the preference of the pivotal
+voter.
+
+This would contradict our assumption that our decision function is non-trivial!
+\stop
+
+\startvoltaire
+I made no such assumption.
+\stop
+
+\startbarere
+\brissot!
+\stop
+
+\startbrissot
+I am convinced that some evil genius is responsible for the failure of the
+appeal to the people.
+
+And I am convinced that the consequences of this failure shall forever condemn
+this \convention to be remembered as monsters.
+
+I do believe in death for \louis, but not at the cost of the people's
+sovereignty and the dignity of their leaders.
+
+As such, I uphold the condition of \mailhe.
+
+I believe that respite until the completion of our constitution is perhaps the
+final hope for France's redemption.
+\stop
+
+\startvoltaire
+So, A or C? Again, we are faced with the dilemma.
+
+\beat
+
+Observe that B is ranked above C by every representative.
+
+Thus, if the outcome were C, it must remain C even if B were to be lifted to
+the top of every ranking.
+
+This would contradict our assumption that all decision functions support
+unanim(ity) --
+\stop
+
+\startleibniz
+-- NO-O-O! NO-O! ALL STRATEGY-PROOF DECISION FUNCTIONS ARE TRIVIAL! NO-O-O-O!
+\stop
+
+\startbarere
+\condorcet!
+\stop
+
+\startvoltaire
+DO WE LIVE IN THE BEST OF ALL POSSIBLE WORLDS, PROFESSOR?
+\stop
+
+\startleibniz
+I DON'T KNOW! I CAN'T KNOW! I DON'T!
+\stop
+
+\startvoltaire
+DO WE LIVE IN THE BEST OF ALL POSSIBLE WORLDS!? TELL ME! TELL ME!
+\stop
+
+\startbarere
+\condorcet!
+\stop
+
+\stage \condorcet finds himself on the tribune.
+
+\stage \condorcet is frozen. The \convention stares at him.
+
+\stage Pause.
+
+\stage Pause. Whispers.
+
+\stage \condorcet has trouble breathing.
+
+\startsplit
+
+\startanonymous
+Et toi!? Et toi!?
+\stop
+
+\split
+\leavevmode
+
+\startbarere
+Et toi!?
+\stop
+
+\stopsplit
+
+\startsplit
+
+\startthemoderates
+ET TOI!? ET TOI!?
+\stop
+
+\split
+
+\startthemountain
+ET TOI!? ET TOI!?
+\stop
+
+\stopsplit
+
+\starttheconvention
+ET TOI!? ET TOI!? ET TOI!?
+\stop
+
+\startthestranger
+ET TOI, {\WORDS\robespierre}!?
+\stop
+
+\startcondorcet
+I...
+\stop
+
+\stage \condorcet begins to struggle to maintain his composure.
+
+\startcondorcet
+I have no voice!
+\stop
+
 \stopcomponent
