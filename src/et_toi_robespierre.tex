@@ -64,7 +64,7 @@ label(textext("A | C"), origin);
 \bTD $R_2$ \eTD
 \bTD $R_3$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleA]}
@@ -99,7 +99,7 @@ label(textext("A | C"), origin);
 \stopformula
 
 \startvoltaire
-Suppose we have - oh, I don't know, seven-hundred forty-five representatives
+Suppose we have - oh, I don't know, seven-hundred twenty-one representatives
 who each rank their preferences for three choices: A, B, and C.
 
 However, unlike before, I have no intention of ascribing any interpretation to
@@ -139,7 +139,7 @@ over B.
 \bTD $R_2$ \eTD
 \bTD $R_3$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleA]}
@@ -231,7 +231,7 @@ that if it did, the outcome could only be C.
 \bTD $R_2$ \eTD
 \bTD $R_3$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleAorC]}
@@ -335,18 +335,10 @@ representative responsible for it.
 Ah! I see your reasoning. This algorithm is sure to terminate by unanimity.
 
 For in the worst case, you would modify the preference of representative
-seven-hundred forty-five, and by then the choice of C will be placed at the top
+seven-hundred twenty-one, and by then the choice of C will be placed at the top
 of every ranking.
 
 By unanimity, the outcome must be C in such a case.
-\stop
-
-\startvoltaire
-That's my thinking.
-
-Therefore, there must exist a representative where performing this procedure
-does indeed change the outcome from A to C, and at this point we halt the
-algorithm.
 \stop
 
 \startbarere
@@ -370,9 +362,10 @@ by \mailhe.
 \stop
 
 \startvoltaire
-Given now that we know the existence of a representative where, upon lifting
-their rank for C, would change the outcome to C, we shall call this
-representative the pivotal voter.
+Given now that we know the existence of a representative where, upon increasing
+their rank for C results in the outcome changing to C.
+
+We shall call this representative the pivotal voter.
 
 I will label the index of the pivotal voter's location with the letter N.
 \stop
@@ -389,7 +382,7 @@ I will label the index of the pivotal voter's location with the letter N.
 \bTD $R_{n}$ \eTD
 \bTD $R_{n+1}$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleA]}
@@ -441,7 +434,7 @@ I will label the index of the pivotal voter's location with the letter N.
 \bTD $R_{n}$ \eTD
 \bTD $R_{n+1}$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleC]}
@@ -496,18 +489,19 @@ preference for C above A.
 \beat
 
 Now, I'd like to apply a new algorithm to this second table - the one taking
-place after C has been lifted.
+place after C had become the new result.
 
-Notice that the representatives to the right of the pivotal voter already list
-C at the bottom of their preferences.
+Notice that the representatives to the right of the pivotal voter currently
+list C at the bottom of their preferences.
 
 Therefore, changing their preference for B and lifting it above A should
 not change the outcome.
 \stop
 
 \startleibniz
-True. If this action changed the outcome, they would be compelled to to do it
-no matter their true preferences for B and A.
+True. If any of these actions taken by the right voters changed the outcome,
+they would be compelled to to do it no matter their true preferences for B and
+A.
 \stop
 
 \goodbreak
@@ -523,7 +517,7 @@ no matter their true preferences for B and A.
 \bTD $R_{n}$ \eTD
 \bTD $R_{n+1}$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleC]}
@@ -592,7 +586,7 @@ already at the top of their preferences.
 \bTD $R_{n}$ \eTD
 \bTD $R_{n+1}$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleC]}
@@ -692,7 +686,7 @@ Not so.
 \bTD $R_{n}$ \eTD
 \bTD $R_{n+1}$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleAorC]}
@@ -778,7 +772,7 @@ Me, clever? Why thank you, professor.
 \bTD $R_{n}$ \eTD
 \bTD $R_{n+1}$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleA]}
@@ -845,7 +839,7 @@ Now, we can lift all of the Bs to the left of and including the pivotal voter.
 \bTD $R_{n}$ \eTD
 \bTD $R_{n+1}$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleA]}
@@ -950,7 +944,7 @@ change the outcome.
 \bTD $R_{n}$ \eTD
 \bTD $R_{n+1}$ \eTD
 \bTD[loffset=14pt] \bf\unknown \eTD
-\bTD $R_{745}$ \eTD
+\bTD $R_{721}$ \eTD
 \bTD[bottomframe=off] \rightarrow \eTD
 \bTD[bottomframe=off,loffset=0pt]
 \vbox{\vskip-2pt\usestaticMPfigure[circleAorC]}
@@ -1007,8 +1001,10 @@ Right, it must, therefore, be C! Or perhaps it is indeterminate!
 But is it so?
 \stop
 
+\stage \leibniz contemplates.
+
 \startleibniz
-It must be.
+Ah! It must be C!
 
 Notice that every representative apart from the pivotal voter has A listed at
 the bottom of their preferences.
@@ -1162,21 +1158,118 @@ W-which is that \louis shall be sentenced to a life of forced labor.
 \stop
 
 \startbrissot
-You would enslave him as a citizen? {\WORDS\condorcet}, HOW COULD YOU!?
+WHAT!? You would have him {\emph enslaved}!? {\WORDS\condorcet}, HOW COULD
+YOU!?
 \stop
 
 \startcondorcet
 Wha(t) - I...
 \stop
 
+\stage The \mountain chatters in confusion while the \moderates make discordant
+accusations toward \condorcet.
+
 \startbarere
-Order...! \petion!
+Silence! Quiet! The nominal call is done with!
 \stop
 
-\stage Pause. Sorrow.
+\stage The secretary~- a man by the name of \camus~- tallies the vote.
 
-\startpetion
-Death...
+\stage \camus concludes his arithmetic, then shakes his head in disbelief.
+
+\startcamus
+Pardon me, messieurs, I must recount.
 \stop
+
+\stage Nobody reacts.
+
+\stage \camus concludes his arithmetic.
+
+\startcamus
+In the name of the \convention[national], by a margin of one vote, the sentence
+to be pronounced on the accused, \louis[capet], is that of death.
+\stop
+
+\stage Emotions run wild! Tears are shed, sobs are heard... And a cry of united
+victory.
+
+\direction \thestranger whispers to \condorcet.
+
+\stage Many of the \moderates simultaneously call for the tribune.
+
+\stage \robespierre, seeing this, rushes to the floor.
+
+\startrobespierre
+CITIZE-E-ENS! I know what animates you! It is clear what compels you to the
+tribune!
+
+But know that the authority of this \convention depends on this decision being
+final!
+
+The safety of the nation is contingent on~--!
+\stop
+
+\startcondorcet
+-- I DEMAND THE FLOOR, {\WORD\barere[citizen]}!
+\stop
+
+\stage Pause. Silence.
+
+\stage \condorcet[therevolutionary] ascends the tribune.
+
+\stage Pause. Silence.
+
+\startcondorcet
+T-today...
+
+\beat{clears throat}
+
+T-today, kings across the world strive to have us depicted as... as savages for
+having defied our former tyrant.
+
+But now that we've decided it's finally time to continue voting, why don't we
+take this opportunity to - to demonstrate for these spectators our humanity?
+
+\beat
+
+Let us, therefore, vote without delay! Let us begin by abolishing the death
+penalty! Except in the case of kings!
+\stop
+
+\stage Pause. Silence.
+
+\startcondorcet
+A-after that, we could vote on the establishment of public education!
+
+It. Is. IMPERATIVE that we ensure that all of France can be taught to reason,
+so that every citizen in the nation may learn to resolve their conflicts
+through the productive exchange and composition of their ideas!
+
+And, of equal importance, that the population is also taught to engage this
+same talent in writing to guarantee that {\emph every} human being is gifted
+their ability to exercise their right to contribute to human history!
+
+\beat
+
+Citizens! Patriots! Friends! We are now free to eliminate all the laws that
+exist to oppress debtors for the profit of creditors!
+
+We can create institutions to facilitate the adoption of children who have been
+orphaned by the war; improve the treatment of citizens born out of wedlock;
+provide widows the right to vote; construct housing and provide welfare to
+wounded veterans!
+
+Then... Then! If any despot still dares to reproach our republic for the
+judgement of \louis, we may tell them: "we have killed one man so that we may
+save one hundred thousand others!"
+\stop
+
+\stage Pause. Silence.
+
+\stage \condorcet recognizes this silence.
+
+\stage He had sworn to never hear it again, long ago.
+
+\stage \barere begins to applaud - his mood having been marginally improved.
 
 \stopcomponent
