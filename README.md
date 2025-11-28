@@ -1,4 +1,4 @@
-# Characteristica Universalis
+# The Third Estate
 The Tragedy of Nicolas de Condorcet
 
 ---
